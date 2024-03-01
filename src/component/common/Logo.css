@@ -1,0 +1,23 @@
+/* Logo.css */
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+/* Custom styles */
+.text-purple-700 {
+  color: #fa4612; /* Custom purple color */
+}
+
+.logo p{
+  font-size: smaller;
+}
+
+.logo p,h3 {
+  transition: transform 0.3s ease-in-out; /* Animation */
+}
+
+.logo:hover p,h3 {
+  transform: translateY(-2px); /* Move text up slightly on hover */
+}

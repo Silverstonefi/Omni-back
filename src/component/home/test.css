@@ -1,0 +1,57 @@
+.mean-container .mean-bar,
+.mean-container .mean-bar * {
+  box-sizing: content-box;
+}
+
+.mean-container .mean-nav {
+  display: none;
+  background: #ffffff;
+  margin-top: 55px;
+}
+
+.mean-container .mean-nav.open {
+  display: block;
+}
+
+.hamburger {
+  display: block;
+  width: 25px;
+  height: 2px;
+  background-color: #000000;
+  position: relative;
+  margin: 0 auto;
+}
+
+.hamburger:before,
+.hamburger:after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: #000000;
+  position: absolute;
+  left: 0;
+  transition: all 0.2s ease-in-out;
+}
+
+.hamburger:before {
+  top: -8px;
+}
+
+.hamburger:after {
+  bottom: -8px;
+}
+
+.mean-container .mean-bar:focus .hamburger:before {
+  top: 0;
+  transform: rotate(45deg);
+}
+
+.mean-container .mean-bar:focus .hamburger:after {
+  bottom: 0;
+  transform: rotate(-45deg);
+}
+
+.mean-container .mean-bar:focus .hamburger {
+  background-color: transparent;
+}
